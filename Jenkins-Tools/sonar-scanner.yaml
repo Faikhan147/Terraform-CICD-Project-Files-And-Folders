@@ -1,0 +1,5 @@
+tool:
+  sonarRunnerInstallation:
+    installations:
+      - name: "Sonar-Scanner"
+        home: "/opt/sonar-scanner"

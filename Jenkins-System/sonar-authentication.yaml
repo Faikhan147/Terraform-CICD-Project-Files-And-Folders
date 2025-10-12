@@ -1,0 +1,7 @@
+unclassified:
+  sonarGlobalConfiguration:
+    installations:
+      - name: "Sonar-Authentication"
+        serverUrl: "http://18.232.113.217:9000"
+        credentialsId: "Sonar-Global-Token"
+        
