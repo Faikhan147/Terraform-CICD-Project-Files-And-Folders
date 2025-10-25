@@ -14,7 +14,7 @@ def jobFiles = [
 ]
 
 def localScriptPath = "/var/lib/jenkins/dsl_scripts"
-def s3BasePath = "s3://terraform-backend-all-envs/Jenkins-Pipelines/pipeline-jobs"
+def s3BasePath = "s3://terraform-backend-all-environments/Jenkins-Pipelines/pipeline-jobs"
 
 jobFiles.each { jobName, fileName ->
     def s3ScriptPath = "${s3BasePath}/${fileName}"
@@ -59,5 +59,6 @@ jobFiles.each { jobName, fileName ->
         println "❌ Failed to download ${fileName} from S3"
     }
 }
+
 
 println "🎯 All jobs processed!"
